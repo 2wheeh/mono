@@ -1,18 +1,9 @@
 {
   "compilerOptions": {
+    /* Language and Environment */
     "target": "ES2020",
-    "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
-    "skipLibCheck": true,
-
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
+    "useDefineForClassFields": true,
 
     /* Linting */
     "strict": true,
@@ -20,13 +11,36 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
+    /* Interop Constraints */
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react-jsx",
+
+    /* Modules */
+    "moduleResolution": "bundler",
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "allowImportingTsExtensions": true,
+
+    /* Emit */
+    "noEmit": true,
+    "outDir": "dist",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "declaration": true,
+    "declarationMap": true,
+
     /* Path alias */
     "baseUrl": ".",
     "paths": {
       "@atom/*": ["src/atom/*"],
-      "@molecule/*": ["src/molecule/*"]
-    }
+      "@molecule/*": ["src/molecule/*"],
+      "@utils/*": ["src/utils/*"]
+    },
+    "typeRoots": ["src/index.d.ts"]
   },
   "include": ["src"],
+  "exclude": ["node_modules", "dist"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
