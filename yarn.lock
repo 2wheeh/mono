@@ -6773,7 +6773,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:8.46.0, eslint@npm:^8.45.0, eslint@npm:^8.46.0":
+"eslint@npm:8.46.0, eslint@npm:^8.45.0":
   version: 8.46.0
   resolution: "eslint@npm:8.46.0"
   dependencies:
@@ -9270,7 +9270,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "mono@workspace:."
   dependencies:
-    eslint: ^8.46.0
     prettier: 2.8.7
     typescript: ^5.1.6
   languageName: unknown
@@ -9366,7 +9365,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next@npm:13.4.13":
+"next@npm:*, next@npm:13.4.13":
   version: 13.4.13
   resolution: "next@npm:13.4.13"
   dependencies:
