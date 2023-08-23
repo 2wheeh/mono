@@ -5,8 +5,10 @@
   "type": "module",
   "scripts": {
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "build": "vite build && yarn build:css",
-    "build:css": "tailwindcss -m -i ./src/tailwind-entry.css -o ./dist/styles.css",
+    "clean": "rm -rf dist",
+    "build": "yarn clean && vite build && yarn build:css",
+    "build:watch": "yarn clean && yarn build:css && vite build --watch",
+    "build:css": "tailwindcss -m -i ./src/tailwind-entry.css -o ./dist/styles.css && cp tailwind.config.js ./dist",
     "storybook": "concurrently \"yarn storybook:css\" \"storybook dev -p 6006\"",
     "storybook:css": "tailwindcss -w -i ./src/tailwind-entry.css -o ./src/index.css",
     "build-storybook": "concurrently \"yarn build-storybook:css\" \"storybook build\"",
@@ -29,6 +31,10 @@
     "./styles.css": {
       "require": "./dist/styles.css",
       "default": "./dist/styles.css"
+    },
+    "./tailwind.config": {
+      "require": "./dist/tailwind.config.js",
+      "default": "./dist/tailwind.config.js"
     }
   },
   "devDependencies": {
