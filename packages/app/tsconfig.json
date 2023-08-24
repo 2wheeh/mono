@@ -6,7 +6,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "references": [{ "path": "../ui/tsconfig.json" }], // to avoid circular dependencies
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
