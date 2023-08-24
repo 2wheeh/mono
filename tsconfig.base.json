@@ -29,6 +29,8 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
 
-    "incremental": true
+    "incremental": true,
+
+    "composite": true
   }
 }
