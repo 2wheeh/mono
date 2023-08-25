@@ -1,6 +1,5 @@
 {
-  "name": "@mono/ui",
-  "private": true,
+  "name": "@mymono/ui",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -13,6 +12,7 @@
     "storybook:css": "tailwindcss -w -i ./src/tailwind-entry.css -o ./src/index.css",
     "build-storybook": "concurrently \"yarn build-storybook:css\" \"storybook build\"",
     "build-storybook:css": "tailwindcss -m -i ./src/tailwind-entry.css -o ./src/index.css",
+    "publish": "npm publish --access public",
     "prepublishOnly": "yarn build"
   },
   "dependencies": {

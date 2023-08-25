@@ -1,4 +1,4 @@
-import { AtomicComponent, MolecularComponent } from '@mono/ui';
+import { AtomicComponent, MolecularComponent } from '@mymono/ui';
 
 export default function Home() {
   return (

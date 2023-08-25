@@ -1,5 +1,5 @@
 {
-  "name": "mono",
+  "name": "mymono",
   "packageManager": "yarn@3.6.1",
   "author": {
     "name": "WONHEE LEE",
@@ -11,15 +11,14 @@
   },
   "license": "MIT",
   "version": "1.0.0",
-  "private": true,
   "workspaces": {
     "packages": [
       "packages/*"
     ]
   },
   "scripts": {
-    "app": "yarn workspace @mono/app",
-    "ui": "yarn workspace @mono/ui"
+    "app": "yarn workspace @mymono/app",
+    "ui": "yarn workspace @mymono/ui"
   },
   "devDependencies": {
     "prettier": "2.8.7",

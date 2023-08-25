@@ -12,7 +12,7 @@ export default defineConfig({
     sourcemap: true,
     lib: {
       entry: resolve('src', 'index.ts'),
-      name: '@mono/ui',
+      name: '@mymono/ui',
       formats: ['es', 'cjs'],
       fileName: format => `index.${format === 'cjs' ? 'cjs' : 'es.js'}`,
     },
