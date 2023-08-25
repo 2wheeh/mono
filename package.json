@@ -19,7 +19,9 @@
   },
   "scripts": {
     "app": "yarn workspace @mymono/app",
-    "ui": "yarn workspace @mymono/ui"
+    "ui": "yarn workspace @mymono/ui",
+    "build:app": "yarn workspaces foreach -ptR --from '{@mymono/app,}' run build",
+    "build:ui": "yarn workspaces foreach -ptR --from '{@mymono/ui,}' run build"
   },
   "devDependencies": {
     "prettier": "2.8.7",
