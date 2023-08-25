@@ -26,14 +26,14 @@ If you require different dependencies, running `yarn` might yield results like t
 ```
 
 ### Build UI package
-To build the UI package, use this command:
+To build the UI package, use this command from the root directory:
 
 ```bash
-yarn ui build
+yarn build:ui
 ```
 
 ### Run App
-To start the development server and access the app, use this command:
+To start the development server and access the app, use this command from the root directory:
 
 ```bash
 yarn app dev
@@ -44,7 +44,7 @@ For additional scripts, refer to the `package.json` files.
 
 ### Deploy on Vercel
 For deployment, we recommend using Vercel with the following settings:
-1. Set `Root Directory` to `packages/app`
+1. Set `Root Directory` to `packages/app` (Vercel will automatically do this)
 2. Override the Build Command using the script below:
 ```bash
 yarn worksapces foreach -ptR run build
