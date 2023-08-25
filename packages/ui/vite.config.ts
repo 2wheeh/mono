@@ -9,7 +9,6 @@ export default defineConfig({
   plugins: [react(), tsconfigPaths(), dts()],
   build: {
     emptyOutDir: false,
-    sourcemap: true,
     lib: {
       entry: resolve('src', 'index.ts'),
       name: '@mymono/ui',
