@@ -42,3 +42,12 @@ This will launch a development server at `http://localhost:3000`.
 
 For additional scripts, refer to the `package.json` files.
 
+### Deploy on Vercel
+For deployment, we recommend using Vercel with the following settings:
+1. Set `Root Directory` to `packages/app`
+2. Override the Build Command using the script below:
+```bash
+yarn worksapces foreach -ptR run build
+```
+This command runs the build script on the current and all descendant packages in parallel and recursively, building package dependencies first ([yarn workspaces foreach](https://yarnpkg.com/cli/workspaces/foreach))
+
