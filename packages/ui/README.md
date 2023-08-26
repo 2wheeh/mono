@@ -1,27 +1,32 @@
-# React + TypeScript + Vite
+# @mymono/ui
+### React + TypeScript + TailwindCSS + Storybook
+1. `@mymono` provides UI components built with React, TypeScript and TailwindCSS.
+2. ~~WIP: Components in `@mymono/ui` are on [storybook](link is going to be here ... )~~
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+### Installation
+Install the package using your preferred package manager. Open your terminal and run:
+```bash
+yarn add @mymono/ui
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Addiing styles
+In your project's CSS or global styles file (e.g., `globals.css`), import the package's styles as shown below:
+```ts
+// packages/app/src/styles/globals.css
+
+import '@mymono/ui/styles.css'
+```
+
+### Use tailwind config as a preset
+You can use the TailwindCSS configuration provided by `@mymono/ui` as a preset.
+
+To achieve this, add `'@mymono/ui/tailwind.config'` on `presets` field in `tailwind.config.js` or `tailwind.config.ts` file as shown below:
+```ts
+//  packages/app/tailwind.config.ts
+
+const config: Config = {
+  presets: [require('@mymono/ui/tailwind.config')],
+  //... (other configuration options)
+}
+```
+
