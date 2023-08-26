@@ -1,7 +1,9 @@
 {
-  "name": "utils",
+  "name": "@mymono/utils",
+  "version": "0.0.0",
   "packageManager": "yarn@3.6.1",
-  "devDependencies": {
-    "esbuild": "^0.19.2"
+  "main": "index.ts",
+  "scripts": {
+    "echo:name": "echo @mymono/utils"
   }
 }

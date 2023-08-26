@@ -12,7 +12,9 @@
     "storybook:css": "tailwindcss -w -i ./src/tailwind-entry.css -o ./src/index.css",
     "build-storybook": "concurrently \"yarn build-storybook:css\" \"storybook build\"",
     "build-storybook:css": "tailwindcss -m -i ./src/tailwind-entry.css -o ./src/index.css",
-    "prepublishOnly": "yarn build"
+    "prepublishOnly": "yarn build",
+    "echo:name": "echo '@mymono/ui'",
+    "ignore-build": "node ../../scripts/ignore-build.js"
   },
   "dependencies": {
     "react": "^18.2.0",
