@@ -1,0 +1,7 @@
+{
+  "name": "utils",
+  "packageManager": "yarn@3.6.1",
+  "devDependencies": {
+    "esbuild": "^0.19.2"
+  }
+}
