@@ -1,5 +1,5 @@
 # mymono
-This is a boilerplate for a monorepo using `Yarn Berry`. It includes a design system package (`@mono/ui`) built with `Storybook`, `Vite` and `TailwindCSS`. 
+This is a boilerplate for a monorepo using `Yarn Berry`. It includes a design system package (`@mymono/ui`) built with `Storybook`, `Vite` and `TailwindCSS`. 
 
 
 ### Install Dependencies
