@@ -1,7 +1,7 @@
 # @mymono/ui
 ### React + TypeScript + TailwindCSS + Storybook
 1. `@mymono` provides UI components built with React, TypeScript and TailwindCSS.
-2. ~~WIP: Components in `@mymono/ui` are on [storybook](link is going to be here ... )~~
+2. Components in `@mymono/ui` are on [storybook](https://mymono-ui.vercel.app/)
 
 ### Installation
 Install the package using your preferred package manager. Open your terminal and run:
