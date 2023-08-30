@@ -16,7 +16,7 @@ const AtomicComponent = ({ color = 'primary' }: AtomicComponentProps) => {
 
   return (
     <div>
-      <p className={colorClass}>Test</p>
+      <p className={colorClass}>Test~</p>
     </div>
   );
 };

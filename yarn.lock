@@ -2056,6 +2056,7 @@ __metadata:
   resolution: "@mymono/app@workspace:packages/app"
   dependencies:
     "@mymono/ui": "*"
+    "@mymono/utils": "*"
     "@types/node": 20.4.8
     "@types/react": 18.2.18
     "@types/react-dom": 18.2.7
@@ -2105,6 +2106,12 @@ __metadata:
     vite: ^4.4.5
     vite-plugin-dts: 3.5.2
     vite-tsconfig-paths: ^4.2.0
+  languageName: unknown
+  linkType: soft
+
+"@mymono/utils@*, @mymono/utils@workspace:packages/utils":
+  version: 0.0.0-use.local
+  resolution: "@mymono/utils@workspace:packages/utils"
   languageName: unknown
   linkType: soft
 

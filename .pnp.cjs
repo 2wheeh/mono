@@ -22,6 +22,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {\
         "name": "@mymono/ui",\
         "reference": "workspace:packages/ui"\
+      },\
+      {\
+        "name": "@mymono/utils",\
+        "reference": "workspace:packages/utils"\
       }\
     ],\
     "enableTopLevelFallback": true,\
@@ -29,6 +33,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "fallbackExclusionList": [\
       ["@mymono/app", ["workspace:packages/app"]],\
       ["@mymono/ui", ["workspace:packages/ui"]],\
+      ["@mymono/utils", ["workspace:packages/utils"]],\
       ["mymono", ["workspace:."]]\
     ],\
     "fallbackPool": [\
@@ -3398,6 +3403,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@mymono/app", "workspace:packages/app"],\
             ["@mymono/ui", "workspace:packages/ui"],\
+            ["@mymono/utils", "workspace:packages/utils"],\
             ["@types/node", "npm:20.4.8"],\
             ["@types/react", "npm:18.2.18"],\
             ["@types/react-dom", "npm:18.2.7"],\
@@ -3449,6 +3455,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["vite", "virtual:0f5580774a8a160109bc69b3f72fb6e1af8e5d90c985bcb15c8f218dd4262ec57d25a729962538e813557de1dd4f3324a07cb7218e12c243de908a789b02a20b#npm:4.4.8"],\
             ["vite-plugin-dts", "virtual:0f5580774a8a160109bc69b3f72fb6e1af8e5d90c985bcb15c8f218dd4262ec57d25a729962538e813557de1dd4f3324a07cb7218e12c243de908a789b02a20b#npm:3.5.2"],\
             ["vite-tsconfig-paths", "virtual:0f5580774a8a160109bc69b3f72fb6e1af8e5d90c985bcb15c8f218dd4262ec57d25a729962538e813557de1dd4f3324a07cb7218e12c243de908a789b02a20b#npm:4.2.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@mymono/utils", [\
+        ["workspace:packages/utils", {\
+          "packageLocation": "./packages/utils/",\
+          "packageDependencies": [\
+            ["@mymono/utils", "workspace:packages/utils"]\
           ],\
           "linkType": "SOFT"\
         }]\
