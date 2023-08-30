@@ -3,7 +3,7 @@ type TProject = {
   subtitle: string;
 };
 
-export const testStr: string = '내보내줘';
+export const testStr: string = '내보 내줘';
 
 const PROJECT: TProject = {
   title: 'Site Title',
