@@ -1,6 +1,6 @@
 const { execSync, exec } = require('child_process');
 
-const dependantWorkspaces = [];
+const dependentWorkspaces = [];
 
 execSync('yarn workspaces foreach -ptR run echo:name')
   .toString()
@@ -9,18 +9,18 @@ execSync('yarn workspaces foreach -ptR run echo:name')
     if (workspacePath.includes('@mymono')) {
       const workspace = '../' + workspacePath.split('/').pop();
 
-      dependantWorkspaces.push(workspace);
+      dependentWorkspaces.push(workspace);
     }
   });
 
-console.log('dependantWorkspaces', dependantWorkspaces);
+console.log('dependentWorkspaces', dependentWorkspaces);
 
-exec('git diff HEAD^ HEAD --quiet -- ' + dependantWorkspaces.join(' '), error => {
+exec('git diff HEAD^ HEAD --quiet -- ' + dependentWorkspaces.join(' '), error => {
   if (error === null) {
-    console.log('No changes in dependant workspaces, skipping build');
+    console.log('No changes in dependent workspaces, skipping build');
     process.exit(0);
   } else if (error.code === 1) {
-    console.log('Changes in dependant workspaces, building');
+    console.log('Changes in dependent workspaces, building');
     process.exit(1);
   }
 });
